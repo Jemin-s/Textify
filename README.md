@@ -13,9 +13,9 @@ Textify is an AI-powered writing assistant that leverages the Mistral API to hel
 
 ## Technologies Used
 
-- **Backend**: Java with Spring Boot
-- **Frontend**: React
-- **AI Model**: Mistral API for text processing and generation
+- **Backend**: <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white" alt="Java" />  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white" alt="Spring Boot" />
+- **Frontend**: <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white" alt="React" /> 
+- **AI Model**: <img src="https://img.shields.io/badge/Mistral_API-00A5CF?style=flat&logo=api&logoColor=white" alt="Mistral API" /> for text processing and generation
 
 ## Installation
 
@@ -71,6 +71,4 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 ## Acknowledgements
 
 - Thanks to the Mistral API for providing powerful text processing capabilities.
-- Thanks to all resources and libraries that contributed to the development of Textify.
-
 ---
