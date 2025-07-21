@@ -1,0 +1,55 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment and build directories
+.env
+node_modules
+dist
+dist-ssr
+*.local
+target/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Help and documentation
+HELP.md
+
+# Java-related files and directories
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# NetBeans
+/nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# IntelliJ IDEA
+*.iws
+*.iml
+*.ipr
