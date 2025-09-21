@@ -1,12 +1,14 @@
-FROM maven:3.9.6-eclipse-temurin-21 AS build
-WORKDIR /app
-COPY pom.xml .
-RUN mvn dependency:go-offline
-COPY . /app
-RUN mvn package -DskipTests
+# Use Eclipse Temurin OpenJDK 17 runtime as base image
+FROM eclipse-temurin:17-jdk-alpine
 
-FROM eclipse-temurin:21-jre
+# Set working directory inside container
 WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
+
+# Copy the built jar file into the container
+COPY target/*.jar app.jar
+
+# Expose port 8080 (Spring Boot default)
 EXPOSE 8080
+
+# Run the jar file
 ENTRYPOINT ["java", "-jar", "app.jar"]
