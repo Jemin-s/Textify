@@ -12,7 +12,7 @@ public class CorsConfig {
       public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
           .allowedOrigins("https://textify-6v1v.onrender.com/email-assistant.com")
-          .allowedMethods("GET", "POST", "PUT", "DELETE")
+          .allowedMethods("*")
           .allowCredentials(true);
       }
     };
