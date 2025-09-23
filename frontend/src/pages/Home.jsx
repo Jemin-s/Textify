@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ServiceCard from "../components/ServiceCard";
 
 const Home = () => {
@@ -68,12 +69,12 @@ const Home = () => {
       </div>
       <div className="service-list">
         {services.map((service, index) => (
-          <a key={index} href={service.slug}>
+          <Link key={index} to={`/${service.slug}`}>
             <ServiceCard
               title={service.title}
               content={service.content}
             />
-          </a>
+          </Link>
         ))}
       </div>
     </div>
