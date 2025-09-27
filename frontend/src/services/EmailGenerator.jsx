@@ -58,15 +58,15 @@ const EmailGenerator = () => {
     const timer = setTimeout(() => {
       txtRef.current.focus();
     }, 0);
-    // const healthCheck = async () => {
-    //   try {
-    //     const response = await axios.get("/health-check");
-    //     console.log(response);
-    //   } catch (e) {
-    //     console.log(e);
-    //   }
-    // };
-    // healthCheck();
+    const healthCheck = async () => {
+      try {
+        const response = await axios.get("/health-check");
+        console.log(response);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    healthCheck();
     return () => clearTimeout(timer);
   }, []);
 
