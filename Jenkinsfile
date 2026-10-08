@@ -1,7 +1,8 @@
 pipeline {
     agent any
     environment {
-        PATH = "/Users/jeminvasoya/.nvm/versions/node/v24.21.0/bin:${env.PATH}"
+        JAVA_HOME = "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home"
+        PATH = "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin:/Users/jeminvasoya/.nvm/versions/node/v24.21.0/bin:${env.PATH}"
     }
     options {
         skipDefaultCheckout(true)
