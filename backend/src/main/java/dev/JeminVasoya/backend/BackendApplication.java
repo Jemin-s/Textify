@@ -1,4 +1,4 @@
-package dev.JuhilSavani.backend;
+package dev.JeminVasoya.backend;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

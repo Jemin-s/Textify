@@ -1,7 +1,7 @@
-package dev.JuhilSavani.backend;
+package dev.JeminVasoya.backend;
 
-import dev.JuhilSavani.backend.controller.MistralController;
-import dev.JuhilSavani.backend.service.MistralService;
+import dev.JeminVasoya.backend.controller.MistralController;
+import dev.JeminVasoya.backend.service.MistralService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -29,7 +29,7 @@ class MistralControllerTest {
     void healthCheckReturnsOk() throws Exception {
         mockMvc.perform(get("/health-check"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("200: Failed"));
+                .andExpect(content().string("200: Ok"));
     }
 
     @Test

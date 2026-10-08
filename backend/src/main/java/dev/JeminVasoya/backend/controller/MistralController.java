@@ -1,6 +1,6 @@
-package dev.JuhilSavani.backend.controller;
+package dev.JeminVasoya.backend.controller;
 
-import dev.JuhilSavani.backend.service.MistralService;
+import dev.JeminVasoya.backend.service.MistralService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
