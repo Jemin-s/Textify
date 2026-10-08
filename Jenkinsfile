@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    environment {
+        PATH = "/Users/jeminvasoya/.nvm/versions/node/v24.21.0/bin:${env.PATH}"
+    }
     options {
         skipDefaultCheckout(true)
         timestamps()
