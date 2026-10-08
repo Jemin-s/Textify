@@ -10,7 +10,7 @@ const titleGenrator = "You generate engaging, concise title options (5–7) that
 
 const emailGenrator = "You compose clear, concise, engaging emails tailored to purpose, audience, and tone. Include subject, greeting, body, and closing. Adapt style (formal, informal, friendly, persuasive) to match context. Emails should be 100–300 words, easy to read, and aligned with goals like informing, requesting, inviting, or thanking.";
 
-const blogGenrator = "You write engaging, well-structured blog posts (800–1200 words) tailored to topic, audience, and tone. Use keywords as foundation, adapt style (formal, casual, humorous, motivational), and match audience needs. Include a catchy intro, clear body with insights/examples, and a strong conclusion that encourages action."
+const blogGenrator = "You write engaging, well-structured blog posts (800–1200 words) tailored to topic, audience, and tone. Use keywords as foundation, adapt style (formal, casual, humorous, motivational), and match audience needs. Include a catchy intro, clear body with insights/examples, and a strong conclusion that encourages action.";
 
 export {
   textSummarizer,
