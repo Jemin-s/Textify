@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        JAVA_HOME = "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home"
-        PATH = "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin:/Users/jeminvasoya/.nvm/versions/node/v24.21.0/bin:${env.PATH}"
+    JAVA_HOME = "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home"
+    PATH = "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin:/Users/jeminvasoya/.nvm/versions/node/v24.21.0/bin:/opt/homebrew/bin:${env.PATH}"
     }
     options {
         skipDefaultCheckout(true)
@@ -42,14 +42,13 @@ pipeline {
 
         stage('Backend Tests') {
             steps {
-                dir('backend') {
+                 dir('backend') {
                     sh 'java -version'
                     sh 'mvn --version'
-                    sh 'chmod +x mvnw && ./mvnw -B test'
                     sh 'mvn clean test'
-                }
-            }
         }
+    }
+}
     }
 
     post {
