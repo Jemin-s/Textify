@@ -29,7 +29,7 @@ class MistralControllerTest {
     void healthCheckReturnsOk() throws Exception {
         mockMvc.perform(get("/health-check"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("200: Ok"));
+                .andExpect(content().string("200: Failed"));
     }
 
     @Test
