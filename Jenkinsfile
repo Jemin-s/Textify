@@ -43,7 +43,10 @@ pipeline {
         stage('Backend Tests') {
             steps {
                 dir('backend') {
+                    sh 'java -version'
+                    sh 'mvn --version'
                     sh 'chmod +x mvnw && ./mvnw -B test'
+                    sh 'mvn clean test'
                 }
             }
         }
